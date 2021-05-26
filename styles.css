@@ -1,0 +1,73 @@
+body, html{
+height: 100%;
+background-color:#8C8C88 ; /*gris neblina*/
+font-family: 'KoHo', sans-serif;
+font-size: 100px;
+justify-content: center;  
+text-align: center;
+color: #F2F2F2; /*blanco neblina*/
+width: 100%;
+}
+
+.container{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 4fr ;
+  grid-template-rows: auto 5fr auto;
+  grid-gap: 10px;
+}
+.container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .header{
+  background-color: #202426;/*negro*/
+  grid-column: 1/3;
+}
+.container .content{
+  background-color: #4C594F;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 3%;
+  grid-gap: 10px;
+}
+.container .menu{
+  background-color:#9DA65D ; /*verde claro cafesoso*/
+}
+.container .footer{
+  background-color: #6C733D;/*verde oscuro cafesoso*/
+  grid-column: 1/-1;
+}
+.container .content .backend {
+  background-color: #022601;
+  height: 100%;
+}
+.container .content .frontend {
+  background-color: #022601;
+  height: 100%;
+}
+.container .content .data {
+  background-color: #022601;
+  height: 100%;
+}
+.container .content .ml {
+  background-color: #022601;
+  height: 100%;
+}
+.container .content div{
+  display: grid;
+  padding: 5%;
+  grid-template-columns: 1fr 1fr;
+}
+.descripcion{
+  background-color: #A4A69C;
+  height: 100%;
+}
+.imagen{
+  background-color: #35403A;
+  height: 100%;
+}
